@@ -1,15 +1,9 @@
 <script setup lang="ts">
 import "mdui";
 import "mdui/mdui.css";
-import { setColorScheme } from "mdui";
-import { onMounted } from "vue";
 import TopAppBar from "@/components/TopAppBar.vue";
 import BottomAppBar from "@/components/BottomAppBar.vue";
 import NavigationDrawer from "@/components/NavigationDrawer.vue";
-
-onMounted(() => {
-    setColorScheme("#03ebfc");
-});
 </script>
 
 <template>

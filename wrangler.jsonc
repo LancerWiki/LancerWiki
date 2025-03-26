@@ -1,0 +1,5 @@
+{
+    "name": "lancerwiki-proxy",
+    "compatibility_date": "2025-03-25",
+    "main": "proxy/proxy.js"
+}
