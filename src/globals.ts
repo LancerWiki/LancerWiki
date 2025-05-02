@@ -1,5 +1,6 @@
 import { reactive } from "vue";
 
 export const globalState = reactive({
-    backendUrl: "https://lancerwiki-proxy.bluemethyst.workers.dev",
+    proxyUrl: "https://lancerwiki-proxy.bluemethyst.workers.dev",
+    githubUrl: "https://github.com/LancerWiki/WikiData/tree/main/wiki",
 });

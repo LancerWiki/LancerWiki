@@ -18,6 +18,5 @@ import NavigationDrawer from "@/components/NavigationDrawer.vue";
                 obscure.
             </p>
         </div>
-        <BottomAppBar />
     </main>
 </template>

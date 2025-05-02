@@ -19,16 +19,6 @@ const router = createRouter({
             name: "engine",
             component: () => import("../views/WikiPageView.vue"),
         },
-        {
-            path: "/wiki/car/:trim/edit",
-            name: "editCar",
-            component: () => import("../views/EditWikiPageView.vue"),
-        },
-        {
-            path: "/wiki/engine/:engine/edit",
-            name: "editEngine",
-            component: () => import("../views/EditWikiPageView.vue"),
-        },
     ],
 });
 

@@ -2,19 +2,19 @@
 import "mdui/mdui.css";
 import "mdui";
 import { useRouter, useRoute } from "vue-router";
+import { globalState } from "@/globals";
 
 export default {
     name: "BottomAppBar",
     setup() {
-        const router = useRouter();
         const route = useRoute();
 
         const navigateToEdit = () => {
             const { engine, trim } = route.params;
             const editPath = engine
-                ? `/wiki/engine/${engine}/edit`
-                : `/wiki/car/${trim}/edit`;
-            router.push(editPath);
+                ? `${globalState.githubUrl}/engine/${engine}.md`
+                : `${globalState.githubUrl}/car/${trim}.md`;
+            window.open(editPath, "_blank");
         };
 
         return { navigateToEdit };
